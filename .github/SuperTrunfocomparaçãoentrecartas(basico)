@@ -55,8 +55,8 @@ int main(){
     if (percapita1 > percapita2) { printf("PIB per Capita: Carta A01 venceu\n");  } else {printf("PIB per Capita: Carta B02 venceu\n"); }
     if (poder1 > poder2) { printf("Poder: Carta A01 venceu\n");  } else {printf("Poder: Carta B02 venceu\n"); }
     printf("\n");
-    if (pib + populacao + area + turismo + percapita1 + poder1 > pib1 + populacao1 + area1 + turismo1 + percapita2 + poder2) { printf("Carta A01 venceu\n");  } 
-    else {printf("Carta B02 venceu\n"); }
+    if (pib + populacao + area + turismo + percapita1 + poder1 > pib1 + populacao1 + area1 + turismo1 + percapita2 + poder2) { printf("Resultado: Carta A01 venceu\n");  } 
+    else {printf("Resultado: Carta B02 venceu\n"); }
     printf("\n");
     
     
