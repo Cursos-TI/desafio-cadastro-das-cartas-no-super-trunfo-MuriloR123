@@ -1,0 +1,66 @@
+#include <stdio.h>
+
+int main(){
+    char estado[20] = "Acre";
+    char codigo[20] = "A01";
+    float area = 24.202;
+    float populacao = 31288;
+    float pib = 356965000;
+    int turismo = 8;
+    char cidade[20] = "Feijó";
+    double densidade1 = populacao / area;
+    double percapita1 = pib / populacao;
+    long int poder1 = area + populacao + pib + turismo + densidade1 + percapita1;
+    
+    printf("Código da Carta: %s\n", codigo);
+    printf("Estado: %s\n", estado);
+    printf("Cidade: %s\n", cidade);
+    printf("Área: %.3f km²\n", area);
+    printf("População: %.f mil habitantes\n", populacao);
+    printf("PIB (Produto Interno Bruto): R$%.f milhões\n", pib);
+    printf("Pontos Turísticos: %.d aproximadamente\n", turismo);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade1);
+    printf("PIB per Capita: %.f reais\n", percapita1);
+    printf("Poder: %ld\n", poder1);
+    
+    
+    char estado2[50] = "Mato Grosso do Sul";
+    char codigo1[20] = "B02";
+    char cidade1[50] = "Campo Grande";
+    float area1 = 8.082;
+    double populacao1 = 954537;
+    double pib1 = 34700000000;
+    int turismo1 = 17;
+    double densidade2 = populacao1 / area1;
+    double percapita2 = pib1 / populacao1; 
+    long int poder2 = area1 + populacao1 + pib1 + turismo1 + densidade2 + percapita2;
+    
+    printf("\n");
+    printf("Código da Carta: %s\n", codigo1);
+    printf("Estado: \%s\n", estado2);
+    printf("Cidade: %s\n", cidade1);
+    printf("Área: %.3f km²\n", area1);
+    printf("População: %.3f mil habitantes\n", populacao1);
+    printf("PIB (Produto Interno Bruto): R$%.f Bilhões\n", pib1);
+    printf("Pontos Turísticos: %d aproximadamente\n", turismo1);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
+    printf("PIB per Capita: %.f reais\n", percapita2);
+    printf("Poder: %ld\n", poder2);
+    printf("\n");
+    if (area > area1) {printf("Área: Carta A01 venceu\n");   } else {printf("Área: Carta B02 venceu\n");}
+    if (populacao > populacao1) {printf("População: Carta A01 venceu\n");  } else {printf("População: Carta B02 venceu\n");}
+    if (pib > pib1) { printf("PIB: Carta A01 venceu\n");  } else {printf("PIB: Carta B02 venceu\n"); }
+    if (turismo > turismo1) { printf("Pontos Turísticos: Carta A01 venceu\n");  } else {printf("Pontos Turísticos: Carta B02 venceu\n"); }
+    if (densidade2 > densidade1) { printf("Densidade Populacional: Carta A01 venceu\n");  } else {printf(" Densidade Populacional: Carta B02 venceu\n"); }
+    if (percapita1 > percapita2) { printf("PIB per Capita: Carta A01 venceu\n");  } else {printf("PIB per Capita: Carta B02 venceu\n"); }
+    if (poder1 > poder2) { printf("Poder: Carta A01 venceu\n");  } else {printf("Poder: Carta B02 venceu\n"); }
+    printf("\n");
+    if (pib + populacao + area + turismo + percapita1 + poder1 > pib1 + populacao1 + area1 + turismo1 + percapita2 + poder2) { printf("Carta A01 venceu\n");  } 
+    else {printf("Carta B02 venceu\n"); }
+    printf("\n");
+    
+    
+    
+    
+    return 0;
+}
